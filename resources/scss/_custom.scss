@@ -1,0 +1,53 @@
+.bulk-delete {
+    // border-top: 1px solid #ced4da;
+    // border-top: 1px solid $danger;
+    color: $danger;
+    background-color: rgba($danger, 0.18);
+    font-weight: 500;
+    &:hover, &.select2-results__option--selected {
+        background-color: $danger!important;
+        color: #fff!important;
+    }
+}
+
+
+.od-header {
+    display: flex;
+    align-items: center;
+    min-height: 23px;
+}
+
+.del-icon-muted {
+    color: $text-muted;
+    &:hover {
+        color: $danger;
+    }
+}
+
+// Tooltip text align left
+.tooltip > .tooltip-inner {
+    text-align: left!important;
+}
+
+.product-avatar {
+    display: block;
+    // max-width: 72px;
+    // max-height: 72px;
+    max-height: 50px;
+    max-width: 50px;
+    width: auto;
+    height: auto;
+    &_sm {
+        max-height: 30px;
+        max-width: 30px;
+    }
+    &_lg {
+        max-width: 72px;
+        max-height: 72px;
+    }
+}
+
+// Responsive table
+.table-responsive {
+    overflow-y: hidden;
+}

@@ -1,0 +1,55 @@
+// 
+// _table.scss
+// 
+
+.table {
+  th {
+      font-weight: $font-weight-bold;
+  }
+
+  .table-light{
+    color: $body-color;
+    border-color: $table-border-color;
+    background-color: $table-head-bg;
+  }
+}
+
+.table-bordered {
+  border: $table-border-width solid $table-border-color;
+
+  th,
+  td {
+    border: $table-border-width solid $table-border-color;
+  }
+}
+
+
+.table-dark>:not(:last-child)>:last-child>*{
+  border-bottom-color:  $table-dark-border-color;
+}
+
+.table-nowrap {
+  th, td {
+    white-space: nowrap;
+  }
+}
+
+.td-fit {
+  width: 1%!important;
+  white-space: nowrap!important;
+}
+
+// DataTables
+
+// Auto width
+table.table-fit {
+  width: auto !important;
+  table-layout: auto !important;
+}
+table.table-fit thead th, table.table-fit tfoot th {
+  width: auto !important;
+}
+table.table-fit tbody td, table.table-fit tfoot td {
+  width: auto !important;
+}
+
